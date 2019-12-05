@@ -1,12 +1,12 @@
 #include-once
-
 #include <Array.au3>
 #include <File.au3>
 #include <String.au3>
 
+
 ; #DESCRIPTION# =================================================================================================================
 ; Title .........: IniFile_udf v1.5.1
-; Description ...: AutoIt3 UDF for expanded INI file operations. Ease the process of reading and writing to INI files.
+; Description ...: AutoIt3 UDF for expanded INI file operations. Eases the process of reading and writing to INI files.
 ; Author(s) .....: demux4555
 ; Changelog .....:
 ;	v1.5		2019.12.03	Proper code cleanup. Removed _IniWriteSectionClear()

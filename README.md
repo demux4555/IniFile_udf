@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A set of user defined functions to ease the process of read and writing to INI files. Expands on the internal INI related functions `IniRead()`,  `IniWrite()`, `IniReadSection()`, `IniWriteSection()`, etc.
+A set of user defined functions to ease the process of read and writing to INI files. The primary role of these functions is to reduce disk operations when handling large number of INI file actions. Expands on the internal INI related functions `IniRead()`,  `IniWrite()`, `IniReadSection()`, `IniWriteSection()`, etc.
 
 Some of the functions:
 * `_IniCheck()`         - Read ini file key value, and if key doesn't exits, it is created with a default value.
@@ -14,7 +14,7 @@ Some of the functions:
 
 
 ### `_IniCheck()` example:
-```
+```AutoIt
 #include "IniFile_udf.au3"
 
 ; Set variable values, while also creating ini file key-value pairs (if they don't exist already).
