@@ -30,7 +30,7 @@ ConsoleWrite("NetSnmp  = " & $NetSnmp & @CRLF)
 
 
 ### `_IniReadSection()` example:
-```
+```AutoIt
 #include "IniFile_udf.au3"
 
 ; These must be declared globally first.
@@ -44,7 +44,7 @@ ConsoleWrite("YPOS = " & $PositionY & @CRLF)
 ```
 
 ### `_IniCheckInArray()` example:
-```
+```AutoIt
 #include "IniFile_udf.au3"
 
 ; Read the ini file into an array
@@ -63,7 +63,7 @@ _ArrayDisplay($aIniFile)
 ```
 
 ### `_IniReadSectionNamesFromArray()` example:
-```
+```AutoIt
 #include "IniFile_udf.au3"
 
 ; Read the ini file into an array
@@ -78,7 +78,7 @@ _ArrayDisplay($aSectionsNames)
 
 
 ### `_IniWriteSectionAdd()` example:
-```
+```AutoIt
 #include "IniFile_udf.au3"
 
 ; Create and populate the two sections' buffers...
