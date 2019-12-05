@@ -5,12 +5,12 @@
 #include <String.au3>
 
 ; #DESCRIPTION# =================================================================================================================
-; Title .........: IniFile_udf v1.5
+; Title .........: IniFile_udf v1.5.1
 ; Description ...: AutoIt3 UDF for expanded INI file operations. Ease the process of reading and writing to INI files.
 ; Author(s) .....: demux4555
 ; Changelog .....:
 ;	v1.5		2019.12.03	Proper code cleanup. Removed _IniWriteSectionClear()
-;	v.1.5.1		2019.12.05	_IniReadSectionNamesFromArray() redone
+;	v1.5.1		2019.12.05	_IniReadSectionNamesFromArray() redone
 ; ===============================================================================================================================
 
 
@@ -378,9 +378,10 @@
 	; Name ..........: _IniWriteSectionFlush
 	; Description ...: Writes ini file buffer created by _IniWriteSectionAdd() to disk, and then clears the buffer.
 	; Syntax ........: _IniWriteSectionFlush($_inifile, $_iniSection)
-	; Parameters ....: $_inifile            - an unknown value.
-	;                  $_iniSection         - an unknown value.
-	; Return values .: None
+	; Parameters ....: $_inifile            - The filename of the .ini file.
+	;                  $_iniSection         - The section name in the .ini file.
+	; Return values .: Success: 1
+	;                  Failure: 0, and sets @error to non-zero
 	; Author ........: demux4555
 	; Remarks .......: Clears the buffer variable when done.
 	; Requires.......: _IniWriteSectionAdd() must be used to create the buffer first
